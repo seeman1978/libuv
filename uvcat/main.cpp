@@ -4,7 +4,7 @@
 
 uv_fs_t open_req, read_req, write_req;
 uv_buf_t iov;
-char buffer[64];
+char buffer[1];
 void on_read(uv_fs_t *req);
 // Due to the way filesystems and disk drives are configured for performance,
 // a write that ‘succeeds’ may not be committed to disk yet.
